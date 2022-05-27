@@ -1,14 +1,14 @@
-import { join } from 'path';
-import AutoLoad, {AutoloadPluginOptions} from '@fastify/autoload';
-import { FastifyPluginAsync } from 'fastify';
+import { join } from 'path'
+import AutoLoad, { AutoloadPluginOptions } from '@fastify/autoload'
+import { FastifyPluginAsync } from 'fastify'
 
 export type AppOptions = {
   // Place your custom options for app below here.
-} & Partial<AutoloadPluginOptions>;
+} & Partial<AutoloadPluginOptions>
 
 const app: FastifyPluginAsync<AppOptions> = async (
-    fastify,
-    opts
+  fastify,
+  opts
 ): Promise<void> => {
   // Place here your custom code!
 
@@ -28,8 +28,7 @@ const app: FastifyPluginAsync<AppOptions> = async (
     dir: join(__dirname, 'routes'),
     options: opts
   })
+}
 
-};
-
-export default app;
+export default app
 export { app }

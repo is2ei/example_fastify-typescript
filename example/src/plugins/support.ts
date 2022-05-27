@@ -2,6 +2,8 @@ import fp from 'fastify-plugin'
 
 export interface SupportPluginOptions {
   // Specify Support plugin options here
+  // `foo` is just an example and you can remove it
+  foo: string
 }
 
 // The use of fastify-plugin is required to be able
@@ -15,6 +17,6 @@ export default fp<SupportPluginOptions>(async (fastify, opts) => {
 // When using .decorate you have to specify added properties for Typescript
 declare module 'fastify' {
   export interface FastifyInstance {
-    someSupport(): string;
+    someSupport: () => string
   }
 }

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-floating-promises */
 import { test } from 'tap'
 import Fastify from 'fastify'
 import Support from '../../src/plugins/support'

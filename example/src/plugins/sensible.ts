@@ -10,4 +10,5 @@ export default fp<SensibleOptions>(async (fastify, opts) => {
   fastify.register(sensible, {
     errorHandler: false
   })
+    .then(() => {}, () => {})
 })

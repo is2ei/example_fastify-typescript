@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-floating-promises */
 import { test } from 'tap'
 import { build } from '../helper'
 
