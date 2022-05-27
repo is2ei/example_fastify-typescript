@@ -1,0 +1,23 @@
+{
+  "name": "example_fastify-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/is2ei/example_fastify-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/is2ei/example_fastify-typescript/issues"
+  },
+  "homepage": "https://github.com/is2ei/example_fastify-typescript#readme",
+  "devDependencies": {
+    "fastify-cli": "3.1.0"
+  }
+}
